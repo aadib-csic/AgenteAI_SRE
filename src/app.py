@@ -11,8 +11,8 @@ st.set_page_config(page_title="SRE Agent Audit-Ready", layout="centered")
 if "brain" not in st.session_state:
     st.session_state.brain = SREBrain()
 
-st.title("🛡️ SRE Agent: Diagnóstico Autónomo")
-st.info("Seguridad: Lista Blanca + Sanitización + Logs de Auditoría activos.")
+st.title("🛡️ Agente IA SRE — SSH Linux")
+#st.info("Seguridad: Lista Blanca + Sanitización + Logs de Auditoría activos.")
 
 # Historial de mensajes en pantalla
 if "messages" not in st.session_state:
