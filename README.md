@@ -90,15 +90,7 @@ WANDB_API_KEY=<tu_wandb_api_key>
 
 > ⚠️ **Nunca subas el fichero `.env` al repositorio.**
 
----
 
-## 🛠️ Herramientas del agente
-
-execute_read_only_command - Solo lectura - Ejecuta comandos SSH validados por lista blanca
-generate_maintenance_plan - Planificación - Genera planes de mantenimiento con comandos cron
-rotate_logs_now - Escritura controlada - Rotación forzada de logs bajo supervisión humana
-
----
 
 ## 🔒 Seguridad y privacidad
 
