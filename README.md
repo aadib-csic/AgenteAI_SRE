@@ -18,10 +18,7 @@ El agente interpreta peticiones en lenguaje natural, ejecuta comandos de diagnó
 - Trazabilidad: W&B Weave
 - Interfaz: Streamlit
 
----
-
-## 🗂️ Estructura del repositorio
-
+```
 AgenteAI_SRE/
 ├── src/
 │   ├── brain_wandb.py
@@ -35,8 +32,7 @@ AgenteAI_SRE/
 │   └── anexo_B.pdf
 ├── .env.example
 └── .gitignore
-
----
+```
 
 ## ⚙️ Instalación y uso
 
