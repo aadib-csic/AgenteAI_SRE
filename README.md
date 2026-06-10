@@ -11,7 +11,7 @@ Sistema de diagnóstico autónomo de servidores Linux remotos basado en un model
 El agente interpreta peticiones en lenguaje natural, ejecuta comandos de diagnóstico vía SSH y genera planes de mantenimiento preventivo, operando íntegramente en local para garantizar la soberanía del dato.
 
 **Stack tecnológico:**
-- LLM: LLaMA 3.1 8B Instruct (cuantización AWQ 4 bits) via Ollama
+- LLM: LLaMA 3.1 8B Instruct, qwen 2.5 7B (cuantización AWQ 4 bits) via Ollama
 - Framework: LangChain 1.0 + LangGraph (patrón ReAct)
 - Validación: Pydantic Settings + Structured Output
 - Conexión remota: Fabric (SSH con claves ED25519)
