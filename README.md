@@ -79,14 +79,16 @@ IMPORTANTE: Asegúrate de tener el fichero .env configurado en la raíz del repo
 
 ## 🔧 Configuración (.env)
 
+```env
 SSH_HOST=<ip_o_hostname_del_servidor>
 SSH_USER=<usuario_ssh>
 SSH_PORT=<puerto_ssh>
 SSH_KEY_PATH=<ruta_absoluta_a_clave_privada>
 ALLOWED_COMMANDS=uptime,free,df,ls,ps,uname,who,ss,netstat,cat,journalctl,hostname,date,du,nproc,swapon
 WANDB_API_KEY=<tu_wandb_api_key>
+```
 
-NUNCA subas el fichero .env al repositorio.
+> ⚠️ **Nunca subas el fichero `.env` al repositorio.**
 
 ---
 
