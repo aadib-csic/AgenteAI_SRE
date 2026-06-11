@@ -11,17 +11,14 @@ Sistema de diagnóstico autónomo de servidores Linux remotos basado en un model
 El agente interpreta peticiones en lenguaje natural, ejecuta comandos de diagnóstico vía SSH y genera planes de mantenimiento preventivo, operando íntegramente en local para garantizar la soberanía del dato.
 
 **Stack tecnológico:**
-- LLM: LLaMA 3.1 8B Instruct (cuantización AWQ 4 bits) via Ollama
+- LLM: LLaMA 3.1 8B Instruct, qwen 2.5 7B (cuantización AWQ 4 bits) via Ollama
 - Framework: LangChain 1.0 + LangGraph (patrón ReAct)
 - Validación: Pydantic Settings + Structured Output
 - Conexión remota: Fabric (SSH con claves ED25519)
 - Trazabilidad: W&B Weave
 - Interfaz: Streamlit
 
----
-
-## 🗂️ Estructura del repositorio
-
+```
 AgenteAI_SRE/
 ├── src/
 │   ├── brain_wandb.py
@@ -35,8 +32,7 @@ AgenteAI_SRE/
 │   └── anexo_B.pdf
 ├── .env.example
 └── .gitignore
-
----
+```
 
 ## ⚙️ Instalación y uso
 
@@ -83,24 +79,18 @@ IMPORTANTE: Asegúrate de tener el fichero .env configurado en la raíz del repo
 
 ## 🔧 Configuración (.env)
 
+```env
 SSH_HOST=<ip_o_hostname_del_servidor>
 SSH_USER=<usuario_ssh>
 SSH_PORT=<puerto_ssh>
 SSH_KEY_PATH=<ruta_absoluta_a_clave_privada>
 ALLOWED_COMMANDS=uptime,free,df,ls,ps,uname,who,ss,netstat,cat,journalctl,hostname,date,du,nproc,swapon
 WANDB_API_KEY=<tu_wandb_api_key>
+```
 
-NUNCA subas el fichero .env al repositorio.
+> ⚠️ **Nunca subas el fichero `.env` al repositorio.**
 
----
 
-## 🛠️ Herramientas del agente
-
-execute_read_only_command - Solo lectura - Ejecuta comandos SSH validados por lista blanca
-generate_maintenance_plan - Planificación - Genera planes de mantenimiento con comandos cron
-rotate_logs_now - Escritura controlada - Rotación forzada de logs bajo supervisión humana
-
----
 
 ## 🔒 Seguridad y privacidad
 
